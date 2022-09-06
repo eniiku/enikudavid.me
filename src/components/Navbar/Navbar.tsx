@@ -19,16 +19,17 @@ const Navbar = () => {
               <a href={`#${item}`}>{item}</a>
             </li>
           ))}
+          <li>
+            <button className="app__navbar--btn">Contact Me</button>
+          </li>
         </ul>
-        <button className="app__navbar--btn">Contact Me</button>
       </div>
-      <div className="app__navbar--links flex--center p--text">
-        <button className="app__navbar--btn">Contact Me</button>
+      <div className="app__navbar--menu">
         <HiMenu onClick={toggleMenu} />
         {menu && (
           <div>
             <HiX onClick={toggleMenu} />
-            <ul className="flex--center">
+            <ul>
               {['works', 'about'].map((item) => (
                 <li key={`link-${item}`}>
                   <a href={`#${item}`} onClick={toggleMenu}>
@@ -36,6 +37,9 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <button className="app__navbar--btn">Contact Me</button>
+              </li>
             </ul>
           </div>
         )}
