@@ -1,15 +1,16 @@
 import './App.scss';
 import { Navbar } from './components';
-import { About, Contact, Works } from './container';
+import { About, Contact, Footer, Works } from './container';
 import './index.css';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+      <Works />
       <About />
       <Contact />
-      <Works />
+      <Footer />
     </div>
   );
 }
