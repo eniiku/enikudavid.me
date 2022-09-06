@@ -1,10 +1,23 @@
 .app {
-  background-color: var(--primary-color);
+  background-color: var(--white--color);
   font-family: var(--font-base);
 }
 
-.app__flex {
+.flex--center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex--between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p--text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black-color);
+  line-height: 1.5;
 }

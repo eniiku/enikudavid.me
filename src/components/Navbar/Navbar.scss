@@ -1,0 +1,52 @@
+.app__navbar {
+  width: 100%;
+
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid var(--lightGray-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: sticky;
+  z-index: 2;
+}
+
+.app__navbar--logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 90px;
+  height: 20px;
+
+  @media screen and (min-width: 2000px) {
+    width: 180px;
+    height: 40px;
+  }
+}
+
+.app__navbar--links {
+  list-style: none;
+
+  li {
+    margin: 0 1rem;
+
+    a {
+      text-decoration: none;
+      color: var(--black-color);
+
+      font-weight: 500;
+    }
+  }
+}
+
+.app__navbar--btn {
+  background: transparent;
+
+  color: var(--darkBlue-color);
+  font-size: 0.9rem;
+  font-weight: bold;
+
+  border: 2px solid var(--darkBlue-color);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+}

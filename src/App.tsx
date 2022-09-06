@@ -5,12 +5,12 @@ import './index.css';
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
       <About />
       <Contact />
       <Works />
-    </>
+    </div>
   );
 }
 
