@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { HiMenu, HiX } from 'react-icons/hi';
+import { AiOutlineMail } from 'react-icons/ai';
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -14,18 +15,20 @@ const Navbar = () => {
       <p className="app__navbar--logo">eniku.</p>
       <div className="app__navbar--links flex--center p--text">
         <ul className="flex--center">
-          {['works', 'about'].map((item) => (
+          {['about'].map((item) => (
             <li key={item}>
               <a href={`#${item}`}>{item}</a>
             </li>
           ))}
           <li>
-            <button className="app__navbar--btn">Contact Me</button>
+            <button className="app__navbar--btn">
+              <AiOutlineMail />
+            </button>
           </li>
         </ul>
       </div>
       <div className="app__navbar--menu">
-        <HiMenu onClick={toggleMenu} />
+        <HiMenuAlt4 onClick={toggleMenu} />
         {menu && (
           <div>
             <HiX onClick={toggleMenu} />

@@ -21,6 +21,7 @@
   width: 90px;
   height: 20px;
 
+  cursor: pointer;
   @media screen and (min-width: 2000px) {
     width: 180px;
     height: 40px;
@@ -33,6 +34,7 @@
 
     li {
       margin: 0 1rem;
+      text-transform: capitalize;
 
       a {
         text-decoration: none;
@@ -49,14 +51,24 @@
 }
 
 .app__navbar--btn {
-  background: transparent;
+  background: var(--black-color);
 
-  color: var(--darkBlue-color);
+  color: var(--white-color);
   font-weight: bold;
 
-  border: 2px solid var(--darkBlue-color);
-  border-radius: 0.3rem;
-  padding: 0.5rem 1rem;
+  border: 2px solid var(--black-color);
+  border-radius: 50%;
+  padding: 3px;
+
+  cursor: pointer;
+  svg {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .app__navbar--menu {
@@ -68,7 +80,7 @@
     width: 35px;
     height: 35px;
 
-    margin-left: 1rem;
+    // margin-right: 1rem;
   }
 
   div {
@@ -91,12 +103,12 @@
     background: var(--black-color);
     color: var(--white-color);
 
+    padding: 1rem 2rem;
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
 
     svg {
       width: 35px;
       height: 35px;
-      margin: 0.5rem 1rem;
     }
 
     ul {
