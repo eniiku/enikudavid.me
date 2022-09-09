@@ -22,9 +22,11 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <button className="app__navbar--btn">
-              <AiOutlineMail />
-            </button>
+            <a href="#contact">
+              <button className="app__navbar--btn">
+                <AiOutlineMail />
+              </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -33,7 +35,7 @@ const Navbar = () => {
         {menu && (
           <section>
             <HiX onClick={toggleMenu} />
-            <ul className="head--text">
+            <ul className="emphasis--text">
               {['home', 'works', 'about', 'contact'].map((item) => (
                 <li key={`link-${item}`}>
                   <a href={`#${item}`} onClick={toggleMenu}>
