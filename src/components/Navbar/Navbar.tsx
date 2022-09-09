@@ -1,6 +1,10 @@
 import { useState } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import {
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+  AiOutlineMail,
+  AiOutlineTwitter,
+} from 'react-icons/ai';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import './Navbar.scss';
 
@@ -45,14 +49,14 @@ const Navbar = () => {
               ))}
             </ul>
             <div>
-              <a href="https://github.com/tekyuma">
-                <FaGithub />
+              <a href="https://github.com/eniiku">
+                <AiOutlineGithub />
               </a>
               <a href="https://linkedin.com/davidenikuomehin">
-                <FaLinkedin />
+                <AiOutlineLinkedin />
               </a>
               <a href="https://twitter.com/eniku">
-                <FaTwitter />
+                <AiOutlineTwitter />
               </a>
             </div>
           </section>

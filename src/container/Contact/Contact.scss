@@ -7,7 +7,7 @@
   justify-items: center;
   align-content: center;
 
-  div {
+  main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +15,25 @@
 
     p {
       margin-bottom: 2rem;
+      text-align: center;
 
       span {
         display: block;
+      }
+    }
+  }
+
+  .app__contact--icons {
+    margin-top: 2rem;
+    margin-bottom: -1.4rem;
+
+    a {
+      color: var(--black-color);
+      padding: 10px;
+
+      svg {
+        width: 22px;
+        height: 22px;
       }
     }
   }
