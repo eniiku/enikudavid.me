@@ -4,8 +4,13 @@
 }
 
 .app--wrapper {
-  padding: 2rem;
+  padding: 1rem;
   min-height: 100vh;
+  max-width: 2000px;
+
+  @media screen and (min-width: 768px) {
+    padding: 2rem;
+  }
 }
 
 .flex--center {

@@ -1,13 +1,17 @@
 .app__navbar {
   width: 100%;
 
-  padding: 1rem 2rem;
+  padding: 1rem;
   background: transparent;
   border: 2px solid var(--lightGray-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   position: sticky;
   z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    padding: 1rem 2rem;
+  }
 }
 
 .app__navbar--logo {
@@ -142,7 +146,7 @@
     }
   }
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
