@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { useRef, useState } from 'react';
 import './Contact.scss';
 
 const Contact = () => {
@@ -7,9 +8,10 @@ const Contact = () => {
     email: '',
     message: '',
   });
-  const [isLoading, setIsLoading] = useState(false);
-
   const { name, email, message } = formData;
+
+  const [isLoading, setIsLoading] = useState(false);
+  const form: any = useRef();
 
   function handleInput(e: any) {
     const { name, value } = e.target;
@@ -17,10 +19,25 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   }
 
-  function handleSubmit() {
+  function handleSubmit(e: any) {
+    e.preventDefault();
     setIsLoading(true);
 
-    console.log('successfull!');
+    emailjs
+      .sendForm(
+        'service_982w52s',
+        'template_56ymk5v',
+        form.current,
+        'w00fj6hp4KXcAjkyT'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     setIsLoading(false);
   }
@@ -38,7 +55,7 @@ const Contact = () => {
           </span>{' '}
           Feel free to shoot me an email! Don't worry i don't bite
         </div>
-        <form>
+        <form ref={form} onSubmit={handleSubmit}>
           <div>
             <input
               type="text"
