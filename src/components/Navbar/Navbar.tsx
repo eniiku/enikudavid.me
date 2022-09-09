@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import './Navbar.scss';
 
@@ -30,18 +31,29 @@ const Navbar = () => {
       <div className="app__navbar--menu">
         <HiMenuAlt4 onClick={toggleMenu} />
         {menu && (
-          <div>
+          <section>
             <HiX onClick={toggleMenu} />
-            <ul className='head--text'>
-              {['home','works', 'about', 'contact'].map((item) => (
+            <ul className="head--text">
+              {['home', 'works', 'about', 'contact'].map((item) => (
                 <li key={`link-${item}`}>
                   <a href={`#${item}`} onClick={toggleMenu}>
                     {item}
                   </a>
                 </li>
               ))}
-           </ul>
-          </div>
+            </ul>
+            <div>
+              <a href="https://github.com/tekyuma">
+                <FaGithub />
+              </a>
+              <a href="https://linkedin.com/davidenikuomehin">
+                <FaLinkedin />
+              </a>
+              <a href="https://twitter.com/eniku">
+                <FaTwitter />
+              </a>
+            </div>
+          </section>
         )}
       </div>
     </nav>
