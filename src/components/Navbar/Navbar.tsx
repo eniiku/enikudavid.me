@@ -32,18 +32,15 @@ const Navbar = () => {
         {menu && (
           <div>
             <HiX onClick={toggleMenu} />
-            <ul>
-              {['works', 'about'].map((item) => (
+            <ul className='head--text'>
+              {['home','works', 'about', 'contact'].map((item) => (
                 <li key={`link-${item}`}>
                   <a href={`#${item}`} onClick={toggleMenu}>
                     {item}
                   </a>
                 </li>
               ))}
-              <li>
-                <button className="app__navbar--btn">Contact Me</button>
-              </li>
-            </ul>
+           </ul>
           </div>
         )}
       </div>
