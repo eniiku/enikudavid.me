@@ -42,7 +42,7 @@ const Form = () => {
     setIsLoading(false);
   }
   return (
-    <form ref={form} onSubmit={handleSubmit} className="app__form">
+    <form ref={form} onSubmit={handleSubmit} className="app__form flex--center">
       <div>
         <input
           type="text"
