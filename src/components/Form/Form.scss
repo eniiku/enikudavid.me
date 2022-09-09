@@ -1,0 +1,44 @@
+.app__form {
+  width: 100%;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  input,
+  textarea {
+    width: 100%;
+    color: var(--black-color);
+    background: var(--lightGray-color);
+
+    margin: 0.85rem 0;
+    padding: 1rem;
+
+    border: none;
+    outline: none;
+    border-radius: 7px;
+
+    font-size: 0.8rem;
+    font-family: var(--font-base);
+  }
+
+  textarea {
+    height: 9rem;
+  }
+
+  button {
+    padding: 0.85rem 1.65rem;
+    border-radius: 10px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-family: var(--font-base);
+
+    background-color: var(--black-color);
+    color: var(--white-color);
+    margin-top: 1rem;
+  }
+}

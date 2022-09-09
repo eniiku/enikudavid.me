@@ -1,5 +1,6 @@
 import emailjs from 'emailjs-com';
 import { useRef, useState } from 'react';
+import './Form.scss';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -41,7 +42,7 @@ const Form = () => {
     setIsLoading(false);
   }
   return (
-    <form ref={form} onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={handleSubmit} className="app__form">
       <div>
         <input
           type="text"
