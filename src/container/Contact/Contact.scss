@@ -1,16 +1,19 @@
 .app__contact {
   min-height: calc(100vh - 51.19px);
-  gap: 1.2rem;
   text-align: center;
 
   display: grid;
   justify-items: center;
   align-content: center;
 
+  h1 {
+    margin-bottom: 1.2rem;
+  }
+
   main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
     p {
@@ -24,8 +27,7 @@
   }
 
   .app__contact--icons {
-    margin-top: 2rem;
-    margin-bottom: -1.4rem;
+    margin-top: 2.3rem;
 
     a {
       color: var(--black-color);
