@@ -1,11 +1,11 @@
-import React from 'react';
+import './About.scss';
 
 const About = () => {
   return (
-    <section>
-      <h1>About Me</h1>
-      <main>
-        <div>
+    <section className="app__about app--wrapper">
+      <h1 className="head--text">About Me</h1>
+      <main className="p--text">
+        <div className="app__about--main">
           <div>
             Hi there! My name is David Enikuomehin. I am a software engineer who
             specializes in developing creative, interactive and enjoyable web
@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div>
           <div>Here are a few technologies I've been using a lot lately:</div>
-          <ul>
+          <ul className="app__about--tech">
             {[
               'React',
               'Next.js',
