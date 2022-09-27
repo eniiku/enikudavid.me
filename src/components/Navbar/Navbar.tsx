@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   AiOutlineGithub,
   AiOutlineLinkedin,
@@ -14,6 +14,14 @@ const Navbar = () => {
   function toggleMenu() {
     setMenu((prevMenu) => !prevMenu);
   }
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const navbar: any = document.querySelector('.app__navbar');
+
+      navbar.classList.toggle('active', window.scrollY > 0);
+    });
+  }, [window]);
 
   return (
     <nav className="app__navbar flex--between">
