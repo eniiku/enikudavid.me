@@ -24,6 +24,56 @@
         display: block;
       }
     }
+
+    .app__contact--details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .app__contact--details--left {
+        text-align: left;
+        width: 60%;
+
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        ul {
+          list-style-type: none;
+
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+
+          p {
+            text-align: left;
+            display: inline-flex;
+
+            & :first-child {
+              font-weight: 500;
+              margin-right: 0.4rem;
+            }
+
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              svg {
+                width: 30px;
+                height: 30px;
+                margin-right: 0.3rem;
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 760px) {
+          display: none;
+        }
+      }
+    }
   }
 
   .app__contact--icons {
@@ -37,6 +87,9 @@
         width: 22px;
         height: 22px;
       }
+    }
+    @media screen and (min-width: 760px) {
+      display: none;
     }
   }
 }

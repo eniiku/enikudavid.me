@@ -18,7 +18,47 @@ const Contact = () => (
         </span>{' '}
         Feel free to shoot me an email! Don't worry i don't bite
       </p>
-      <Form />
+      <div className="app__contact--details">
+        <div className="app__contact--details--left">
+          <h1>For the Form shy</h1>
+          <ul className="p--text">
+            {[
+              [
+                'Email',
+                <AiOutlineMail />,
+                'mail:to enikucaches@gmail.com',
+                'enikucaches@gmail.com',
+              ],
+              [
+                'Linkedin',
+                <AiOutlineLinkedin />,
+                'https://ng.linkedin.com/in/david-enikuomehin',
+                'David Enikuomehin',
+              ],
+              ['Twitter', <AiOutlineTwitter />, 'https://twitter.com/#', 'nil'],
+              [
+                'Github',
+                <AiOutlineGithub />,
+                'https://github.com/eniiku',
+                'eniiku',
+              ],
+            ].map(([header, icon, link, text]) => (
+              <li key={header.toString()}>
+                <a href={link.toString()}>
+                  <p>
+                    <span>
+                      {icon}
+                      {header}:
+                    </span>{' '}
+                    <span> {text}</span>
+                  </p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <Form />
+      </div>
     </main>
     <div className="app__contact--icons">
       <a href="mail:to enikucaches@gmail.com" aria-label="mail">
