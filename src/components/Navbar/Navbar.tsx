@@ -25,7 +25,9 @@ const Navbar = () => {
 
   return (
     <nav className="app__navbar flex--between">
-      <p className="app__navbar--logo">eniku.</p>
+      <p className="app__navbar--logo">
+        <a href="#home">eniku.</a>
+      </p>
       <div className="app__navbar--links flex--center p--text">
         <ul className="flex--center">
           {['about'].map((item) => (
