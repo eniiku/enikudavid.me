@@ -2,7 +2,7 @@ import './Loader.scss';
 
 const Loader = () => {
   return (
-    <main>
+    <main className="app__loader">
       <div>
         <h1>david enikuomehin</h1>
         <ul>
