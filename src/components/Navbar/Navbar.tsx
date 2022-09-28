@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import {
   AiOutlineGithub,
   AiOutlineLinkedin,
@@ -10,9 +10,18 @@ import './Navbar.scss';
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [contactBtn, setContactBtn] = useState(false);
 
   function toggleMenu() {
     setMenu((prevMenu) => !prevMenu);
+  }
+
+  function handleOnMouseOver() {
+    setContactBtn((prevContactBtn) => !prevContactBtn);
+  }
+
+  function handleOnMouseLeave() {
+    setContactBtn((prevContactBtn) => !prevContactBtn);
   }
 
   useEffect(() => {
@@ -37,8 +46,21 @@ const Navbar = () => {
           ))}
           <li>
             <a href="#contact">
-              <button className="app__navbar--btn">
-                <AiOutlineMail />
+              <button
+                className={
+                  contactBtn ? 'app__navbar--btn-open' : 'app__navbar--btn'
+                }
+                onMouseEnter={handleOnMouseOver}
+                onMouseLeave={handleOnMouseLeave}
+              >
+                {contactBtn ? (
+                  <>
+                    <AiOutlineMail />
+                    <p>Get In Touch</p>
+                  </>
+                ) : (
+                  <AiOutlineMail />
+                )}
               </button>
             </a>
           </li>

@@ -36,13 +36,16 @@
     }
   }
 
-  .app__navbar--btn {
+  .app__navbar--btn,
+  .app__navbar--btn-open {
     color: var(--black-color);
     background: var(--white-color);
 
+    font-size: 0.9rem;
+
     svg {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
     }
   }
 
@@ -57,6 +60,15 @@
         width: 30px;
         height: 30px;
         margin: 1rem 1.8rem;
+      }
+
+      div {
+        a {
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
       }
     }
   }
@@ -115,12 +127,39 @@
 
   border: 2px solid var(--black-color);
   border-radius: 50%;
-  padding: 3px;
+  padding: 0.4em;
 
   cursor: pointer;
   svg {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.app__navbar--btn-open {
+  background: var(--black-color);
+  color: var(--white-color);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  border: 2px solid var(--black-color);
+  border-radius: 55px;
+  padding: 0.4em 0.8rem;
+
+  cursor: pointer;
+  svg {
+    width: 23px;
+    height: 23px;
+    margin-right: 0.5rem;
 
     display: flex;
     justify-content: center;
@@ -192,8 +231,8 @@
         color: var(--white-color);
 
         svg {
-          width: 16px;
-          height: 16px;
+          width: 20px;
+          height: 20px;
         }
       }
     }
