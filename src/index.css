@@ -2,11 +2,11 @@
 :root {
   --font-base: 'Cormorant', serif;
 
-  --primary-color: #0e86d4;
-  --secondary-color: #0ed4bf;
+  --primary-color: #3b755f;
+  --secondary-color: #f2cb6c;
   --darkBlue-color: #0e23d4;
-  --black-color: #030303;
-  --white-color: #f9f3fb;
+  --black: #030303;
+  --white: #f9f3fb;
   --lightGray-color: whitesmoke;
 }
 
