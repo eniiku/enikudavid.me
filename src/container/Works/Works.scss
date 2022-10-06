@@ -1,0 +1,45 @@
+.app__works {
+  .app__works--carousel {
+    margin: 0 auto;
+    width: 70vw;
+    height: 60vh;
+    position: relative;
+
+    .app__works--slide {
+      list-style-type: none;
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+
+      div {
+        width: 100%;
+        height: 100%;
+
+        font-size: 5rem;
+        text-align: center;
+      }
+
+      &[data-active] {
+        opacity: 1;
+      }
+    }
+  }
+
+  .app__works--btn {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    &[data-carousel-button='prev'] {
+      left: 1rem;
+    }
+    &[data-carousel-button='next'] {
+      right: 1rem;
+    }
+  }
+}
