@@ -1,22 +1,30 @@
 .app__form {
+  font-family: var(--font-bioRhyme);
   width: 100%;
-  flex-direction: column;
+
+  label {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+
+    text-transform: uppercase;
+    float: left;
+  }
 
   input,
   textarea {
     width: 100%;
-    color: var(--black-color);
-    background: var(--lightGray-color);
+    color: var(--black);
+    background: #fff;
 
-    margin: 0.85rem 0;
+    margin-bottom: 1rem;
     padding: 1rem;
 
     border: none;
     outline: none;
     border-radius: 7px;
 
-    font-size: 1.1rem;
-    font-family: var(--font-base);
+    font-size: 0.9rem;
+    font-family: var(--font-bioRhyme);
   }
 
   textarea {
@@ -29,15 +37,21 @@
     border: none;
 
     font-weight: 700;
-    font-size: 1.1rem;
-    font-family: var(--font-base);
+    font-size: 1rem;
+    font-family: var(--font-bioRhyme);
 
-    background-color: var(--black-color);
-    color: var(--white-color);
+    background-color: var(--secondary-color);
+    color: #fff;
     margin-top: 1rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @media screen and (min-width: 768px) {
+      float: left;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .app__form--inline {
+      display: inline-flex;
+      gap: 1.3rem;
+    }
   }
 }

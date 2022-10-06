@@ -42,23 +42,35 @@ const Form = () => {
     setIsLoading(false);
   }
   return (
-    <form ref={form} onSubmit={handleSubmit} className="app__form flex--center">
+    <form ref={form} onSubmit={handleSubmit} className="app__form">
+      <div className="app__form--inline">
+        <div>
+          <label htmlFor="name">your name</label>
+          <input
+            id="name"
+            type="text"
+            value={name}
+            name="name"
+            placeholder="Your Full Name..."
+            onChange={handleInput}
+          />
+        </div>
+        <div>
+          <label htmlFor="email">email address</label>
+          <input
+            id="email"
+            type="email"
+            value={email}
+            name="email"
+            placeholder="Your Email here..."
+            onChange={handleInput}
+          />
+        </div>
+      </div>
       <div>
-        <input
-          type="text"
-          value={name}
-          name="name"
-          placeholder="Your Full Name..."
-          onChange={handleInput}
-        />
-        <input
-          type="email"
-          value={email}
-          name="email"
-          placeholder="Your Email here..."
-          onChange={handleInput}
-        />
+        <label htmlFor="message">your message</label>
         <textarea
+          id="message"
           name="message"
           value={message}
           placeholder="Type your message here..."
