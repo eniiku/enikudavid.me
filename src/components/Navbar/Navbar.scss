@@ -23,6 +23,9 @@
 
   .app__navbar--logo {
     font-size: 1.9rem;
+    a {
+      color: var(--secondary-color);
+    }
   }
 
   .app__navbar--links {
@@ -91,6 +94,7 @@
   a {
     text-decoration: none;
     color: inherit;
+    font-family: var(--font-bioRhyme);
   }
   @media screen and (min-width: 2000px) {
     width: 180px;
@@ -108,7 +112,7 @@
 
       a {
         text-decoration: none;
-        color: var(--black);
+        color: var(--secondary-color);
 
         font-weight: 500;
       }
@@ -183,7 +187,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 4;
+    z-index: 1000;
 
     height: 100vh;
     min-width: 70%;
@@ -220,18 +224,18 @@
         padding: 1rem 0;
         width: 100%;
 
-        border-bottom: 2px solid var(--black);
+        border-bottom: 2px solid var(--secondary-color);
 
         a {
           text-decoration: none;
-          color: var(--white);
+          color: var(--black);
         }
       }
     }
 
     div {
       a {
-        color: var(--white);
+        color: var(--black);
 
         svg {
           width: 20px;

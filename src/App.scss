@@ -30,16 +30,19 @@
   text-align: left;
   color: var(--black-color);
   line-height: 1.5;
+  font-family: var(--font-bioRhyme);
 }
 
 .emphasis--text {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--secondary-color);
+  font-style: italic;
 }
 
 .head--text {
-  font-size: 3rem;
+  font-size: 3.7rem;
   font-weight: 700;
   color: var(--secondary-color);
+  font-style: italic;
 }

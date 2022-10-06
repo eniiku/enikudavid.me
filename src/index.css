@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;700&family=Cormorant:ital,wght@1,500;1,700&display=swap');
+
 :root {
   --font-base: 'Cormorant', serif;
+  --font-bioRhyme: 'BioRhyme', serif;
 
-  --primary-color: #3b755f;
-  --secondary-color: #f2cb6c;
-  --darkBlue-color: #0e23d4;
+  --primary-color: #ffe6ad;
+  --secondary-color: #9a008a;
   --black: #030303;
-  --white: #f9f3fb;
+  --white: #bed9da;
+
   --lightGray-color: whitesmoke;
 }
 
