@@ -1,20 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;700&family=Cormorant:ital,wght@1,500;1,700&display=swap');
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global styles...............Globally-available variables and config.
+ */
+
+
+
+
+
+/*------------------------------------*\
+ 	#GLOBAL STYLES 
+\*------------------------------------*/
 
 :root {
-  --font-base: 'Cormorant', serif;
-  --font-bioRhyme: 'BioRhyme', serif;
+	--font-base: 'Cormorant', serif;
+	--font-bioRhyme: 'BioRhyme', serif;
 
-  --primary-color: #ffe6ad;
-  --secondary-color: #9a008a;
-  --black: #030303;
-  --white: #bed9da;
+	--primary-color: #ffe6ad;
+	--secondary-color: #9a008a;
+	--black: #030303;
+	--white: #bed9da;
 
-  --lightGray-color: whitesmoke;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	font-synthesis: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app" id="home">
       <Navbar />
-      <Works />
+      {/* <Works /> */}
       <About />
       <Contact />
       <Footer />

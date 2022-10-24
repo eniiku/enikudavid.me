@@ -79,18 +79,18 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <div className="app__navbar--menu-icons">
+                <a href="https://github.com/eniiku">
+                  <AiOutlineGithub />
+                </a>
+                <a href="https://linkedin.com/davidenikuomehin">
+                  <AiOutlineLinkedin />
+                </a>
+                <a href="https://twitter.com/eniku">
+                  <AiOutlineTwitter />
+                </a>
+              </div>
             </ul>
-            <div>
-              <a href="https://github.com/eniiku">
-                <AiOutlineGithub />
-              </a>
-              <a href="https://linkedin.com/davidenikuomehin">
-                <AiOutlineLinkedin />
-              </a>
-              <a href="https://twitter.com/eniku">
-                <AiOutlineTwitter />
-              </a>
-            </div>
           </section>
         )}
       </div>
