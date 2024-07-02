@@ -1,4 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
+import { layerStyles, textStyles } from "~/styles/config";
 
 export default defineConfig({
   jsxFramework: "qwik",
@@ -29,7 +30,9 @@ export default defineConfig({
           helvetica_neue: { value: 'var(--font-helvetica-neue), sans-serif' },
           gloria: { value: 'var(--font-gloria-hallelujah), cursive' }
         }
-      }
+      },
+      textStyles,
+      layerStyles
     },
   },
 
