@@ -1,0 +1,56 @@
+/**
+ * CONTENTS
+ *
+ * FONT DECLERATIONS
+ * Helvetica Neue...............Font Declerations for Helvetica Neue.
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #FONT DECLARATIONS
+\*-----------------------------------*/
+
+
+/**
+ * Helvetica Neue - Light
+ */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Helvetica Neue';
+    src: url('/fonts/helvetica-neue/helveticaneuelight-webfont.woff2') format('woff2'),
+        url('/fonts/helvetica-neue/helveticaneuelight-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+/**
+ * Helvetica Neue - Regular
+ */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Helvetica Neue';
+    src: url('/fonts/helvetica-neue/helveticaneueroman-webfont.woff2') format('woff2'),
+        url('/fonts/helvetica-neue/helveticaneueroman-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+/**
+ * Helvetica Neue - Medium
+ */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Helvetica Neue';
+    src: url('/fonts/helvetica-neue/helveticaneuemedium-webfont.woff2') format('woff2'),
+        url('/fonts/helvetica-neue/helveticaneuemedium-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}

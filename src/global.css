@@ -3,3 +3,9 @@
  * View the full documentation at https://panda-css.com/docs/concepts/cascade-layers#layer-css
  */
 @layer reset, base, tokens, recipes, utilities;
+
+
+:root {
+    --font-helvetica-neue: 'Helvetica Neue', sans-serif;
+    --font-gloria-hallelujah: 'Gloria Hallelujah', cursive;
+}
