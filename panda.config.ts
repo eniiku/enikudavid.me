@@ -27,7 +27,7 @@ export default defineConfig({
         },
         fonts: {
           helvetica_neue: { value: 'var(--font-helvetica-neue), sans-serif' },
-          gloria: { value: 'var(--gloria-hallelujah), cursive' }
+          gloria: { value: 'var(--font-gloria-hallelujah), cursive' }
         }
       }
     },
