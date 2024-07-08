@@ -1,5 +1,5 @@
 import { component$, useStyles$ } from "@builder.io/qwik";
-import { type DocumentHead } from "@builder.io/qwik-city";
+import { Link, type DocumentHead } from "@builder.io/qwik-city";
 
 import { css, cx } from "~/styled-system/css";
 import { flex } from "~/styled-system/patterns";
@@ -46,7 +46,7 @@ export default component$(() => {
           <ArrrowLeft class={css({ pos: 'absolute', zIndex: '10', top: '-160%', left: -36 })} />
           <ArrorRight class={css({ pos: 'absolute', zIndex: '10', top: '-70%', right: -28 })} />
 
-          <button class={css({
+          <Link href="https://linkedin.com/in/enikudavid" class={css({
             border: '3px solid',
             borderColor: ["#532011"],
             bg: "#DB7252",
@@ -83,9 +83,9 @@ export default component$(() => {
             },
           })}>
             I'm on Linkedin
-          </button>
+          </Link>
 
-          <button class={css({
+          <Link href="/sneak-peek" class={css({
             pos: 'relative',
             border: '3px solid',
             borderColor: "green",
@@ -122,8 +122,8 @@ export default component$(() => {
               }
             },
           })}>
-            View Skeleton
-          </button>
+            Take a sneak peek!
+          </Link>
         </div>
       </div>
     </main>
