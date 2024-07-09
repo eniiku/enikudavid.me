@@ -3,11 +3,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        - pnpm install
+        - npm install
     build:
       commands:
         - echo "PUBLIC_POSTHOG_API_KEY=${PUBLIC_POSTHOG_API_KEY}" >> .env.local
-        - pnpm run build
+        - npm run build
   artifacts:
     baseDirectory: dist
     files:
