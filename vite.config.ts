@@ -30,6 +30,9 @@ export default defineConfig(({ command, mode }): UserConfig => {
             tsconfigPaths(),
             partytownVite({ dest: join(__dirname, "dist", "~partytown") }),
         ],
+        ssr: {
+            noExternal: true,
+        },
         // This tells Vite which dependencies to pre-build in dev mode.
         optimizeDeps: {
             // Put problematic deps that break bundling here, mostly those with binaries.
